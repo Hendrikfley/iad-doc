@@ -1,0 +1,447 @@
+/* This is a comment that will not be read by browsers d */
+* {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+}
+
+#content img {
+ /*   width: 15rem;*/
+    /*align-items: center;*/
+}
+
+
+#content {
+    padding-top: 170px !important;
+    padding-left: 40px;
+  }
+
+html {
+    font-family: sans-serif;
+}
+
+p, li{
+    color: black;
+}
+
+.container-img-text{
+    /*border: red 1px solid;*/
+    background-image: url("iad-exercise_3-12.jpeg");
+    min-height: 400px; !important;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2em;
+}
+
+#led-img{
+    background-image: url("iad-exercise_2-1.jpeg");
+    min-height: 400px; !important;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2em;
+}
+
+#code-img{
+        background-image: url("iad-exercise_2-4.jpeg");
+        min-height: 400px; !important;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 2em;
+}
+
+#ideas-img{
+    background-image: url("exercise-3-brainstorming.jpg");
+    min-height: 400px; !important;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2em;
+}
+
+#tapir{
+    height: 300px;
+    transition: 1.5s ease-in-out;
+}
+
+#tapir:hover{
+    height: 400px;
+
+}
+
+#setup{
+    height: 400px;
+    transition: 1.5s ease-in-out;
+}
+
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#img-txt{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#img{
+display: flex;
+    padding-right: 1em;
+    padding-bottom: 1em;
+
+}
+
+#txt{
+    width: 70%;
+}
+
+#gallery > p > img{
+    width: 300px;
+    transition: 1.5s ease-in-out;
+}
+
+#gallery > p > img:hover{
+    width: 400px;
+    transition: 1.5s ease-in-out;
+}
+
+#setup:hover{
+    height: 500px;
+}
+
+#brainstorm{
+    height: 300px;
+    transition: 1.5s ease-in-out;
+}
+
+#brainstorm:hover{
+    height: 400px;
+
+}
+
+#presentation{
+    height: 500px;
+    transition: 1.5s ease-in-out;
+}
+
+
+#mirror-notes{
+    height: 300px;
+    transition: 1.5s ease-in-out;
+}
+
+#mirror-notes:hover{
+    height: 400px;
+
+}
+
+#modern-family{
+    height: 300px
+}
+
+
+/* Header-Menu-Styling */
+header {
+    /* border: 1px solid red; */
+    position: fixed;
+    /* display: flex; */
+    z-index: 1;
+}
+
+
+.desktop {
+    /* border: 1px solid red; */
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    /* height: 150px; */
+    width: 100%;
+    height: 150px;
+    padding: 50px;
+    background: #000000e0;
+}
+
+.mobile {
+    display: none;
+}
+
+.mobile-menu-container {
+    display: none;
+}
+
+
+.logo {
+    /* border: 1px solid red; */
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.link {
+    /* border: 1px solid red; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.menu {
+    /* border: 1px solid red; */
+    margin-top: 15px;
+    display: flex;
+    z-index: 1;
+}
+
+.menu>li {
+    /* border: 1px solid red; */
+    list-style-type: none;
+    margin-right: 50px;
+    color: whitesmoke;
+    font-size: 1em;
+    z-index: 99;
+}
+
+.selfie img{
+    display: block;
+    float: left;
+    position: center;
+    max-width: 300px;
+    /* border: 3px solid red; */
+}
+
+.menu a{
+    position: inherit;
+    z-index: 9;
+}
+
+.menu a:visited {
+    color: whitesmoke;
+}
+
+.menu a:link {
+    color: whitesmoke;
+}
+
+.menu a:hover {
+    color: goldenrod;
+}
+
+.menu>li:last-of-type {
+    margin-right: 2em;
+}
+
+/* Code für Dropdown - angepasst aus Tutorial */
+.dropdown {
+    position: relative;
+}
+
+.dropdown>span {
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+}
+
+.tutorials-menu {
+    display: none;
+    z-index: 0;
+}
+
+.dropdown:hover .tutorials-menu {
+    display: flex;
+    flex-direction: column;
+    background: #000000e0;
+    border-radius: 5px;
+    padding-top: 80px;
+
+    position: absolute;
+    top: -25px;
+    left: -30px;
+}
+
+.tutorials-menu li {
+    list-style: none;
+    border-bottom: 1px solid #FFF;
+    padding: 0 40px 10px 20px;
+    margin: 10px;
+}
+
+.tutorials-menu li:last-of-type {
+    border-bottom: none;
+}
+
+body {
+    background-color: whitesmoke;
+    font-size: 20px;
+    z-index: 0;
+}
+
+
+.content-container {
+    /* border: 1px solid red; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    position: absolute;
+    margin-top: 150px;
+    width: 100%;
+}
+
+article {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+
+h1, h2, h3 {
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+
+h2,
+h3 {
+    font-size: 1em;
+}
+
+
+/*Classes are refered to via a '.'*/
+/* IDs are refered to via a '#'. 
+Stylingwise they are to be avoided. 
+But you can add them to the URLs */
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+a:visited {
+    color: goldenrod
+}
+
+a:link {
+    color: goldenrod;
+}
+
+a:hover {
+    color: navy
+}
+
+
+@media only screen and (max-width: 660px) {
+    .mobile {
+        display: block;
+        /* border: 1px solid red; */
+        position: fixed;
+        display: flex;
+        justify-content: right;
+        /* height: 150px; */
+        width: 100%;
+        height: 150px;
+        padding: 50px;
+        background: #000000e0;
+        z-index: 0;
+    }
+
+    .mobile button {
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: 2px solid whitesmoke;
+        border-radius: 2px;
+        display: flex;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .mobile button.display {
+        border: 1.5px solid goldenrod;
+    }
+
+    .bar {
+        background-color: #FFF;
+        display: flex;
+        height: 1.5px;
+        position: absolute;
+        width: 75%;
+        z-index: 99;
+    }
+
+    .bar.display {
+        background-color: goldenrod
+    }
+
+    .top {
+        top: 12px
+    }
+
+    .bottom {
+        bottom: 12px;
+    }
+
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile-menu-container {
+        position: fixed;
+        z-index: 9;
+        list-style-type: none;
+    }
+
+    .mobile-menu-container > li {
+        text-align: right;
+        margin-bottom: 1em;
+        font-size: 1.5em;
+        
+    }
+
+    .mobile-menu-container a:visited {
+    color: whitesmoke
+    }
+
+    .mobile-menu-container a:link {
+    color: whitesmoke
+    }
+
+    .mobile-menu-container a:hover {
+    color: goldenrod
+    }
+
+    .mobile-menu-container.display {
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+        width: 100%;
+        height: calc(100% - 150px);
+        padding: 50px;
+        background: #000000e0;
+    }
+    
+
+
+}
